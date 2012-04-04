@@ -4,6 +4,12 @@
 
 Instead of trying to deal with all your complex cases, `args` provides a toolset to help you with arguments parsing.
 
+## features
+
+Supported syntax for options: `--option=value`, `--option value`, `-abc`, `-abc value`
+
+For boolean flags, `true` value can be omitted, i.g. `-f true` can be replaced with `-f` (and `--flag true` with `--flag` also).
+
 ## option properties
 
 * `name`
@@ -22,7 +28,9 @@ Instead of trying to deal with all your complex cases, `args` provides a toolset
 ## usage example
 
 ```js
-var options = Options.parse([
+var args = require('args');
+
+var options = args.Options.parse([
 	{
 		name: 'option',
 		shortName: 'o',
@@ -33,6 +41,8 @@ var options = Options.parse([
 
 options.getHelp();
 
-var parsed = args('node app.js --option 11', 2).parseAll(options);
+var parser = new args.Parser('node app.js --option 11'.split(' '), 2);
+parser.parse(options);
+var parsed = parser.prepareResult();
 console.log(parsed); // {option: 11}
 ```
