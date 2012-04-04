@@ -1,0 +1,23 @@
+{
+	"name": "args",
+	"version": "0.0.1",
+	"description": "Command line arguments parser",
+	"keywords": ["args", "cli", "arguments", "parser", "toolset"],
+	"author": {
+		"name": "Dmitry Smolin",
+		"email": "dimsmol@gmail.com"
+	},
+	"preferGlobal": false,
+	"private": false,
+	"engines": {
+		"node": "~0.6.0"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/dimsmol/args"
+	},
+	"directories": {
+		"lib": "./lib"
+	},
+	"main": "./lib/index"
+}
