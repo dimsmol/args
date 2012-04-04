@@ -1,7 +1,8 @@
 ## args
 
 `args` is command line arguments parser for node.js
-Instead of trying to do all the things, `args` provides a toolset to help you with arguments parsing.
+
+Instead of trying to deal with all your complex cases, `args` provides a toolset to help you with arguments parsing.
 
 ## option properties
 
@@ -32,6 +33,6 @@ var options = Options.parse([
 
 options.getHelp();
 
-var parsed = args('node app.js --option 11').parseAll(options);
+var parsed = args('node app.js --option 11', 2).parseAll(options);
 console.log(parsed); // {option: 11}
 ```
