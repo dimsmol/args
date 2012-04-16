@@ -18,11 +18,9 @@ For boolean flags, `true` value can be omitted, i.g. `-f true` can be replaced w
 * `type`
 * `isList`
 * `enumItems`
-* `custom`
-	* `check`
-	* `parse`
-	* `tryParse`
-	* `get`
+* `enumHelp`
+* `required`
+* `defaultValue`
 * `help`
 
 ## usage example
