@@ -2,7 +2,7 @@
 
 `args` is command line arguments parser for node.js
 
-Instead of trying to deal with all your complex cases, `args` provides a toolset to help you with arguments parsing.
+Instead of trying to deal with all your complex cases, `args` provides a tool to help you with arguments parsing.
 
 ## features
 
@@ -12,16 +12,23 @@ For boolean flags, `true` value can be omitted, i.g. `-f true` can be replaced w
 
 ## option properties
 
-* `name`
-* `shortName`
-* `key`
-* `type`
-* `isList`
-* `enumItems`
-* `enumHelp`
-* `required`
-* `defaultValue`
-* `help`
+* name
+* shortName
+* key
+* type
+	* `no value` - str
+	* enum
+	* bool
+	* int
+	* float
+	* date
+	* datetime
+* isList
+* enumItems
+* enumHelp
+* required
+* defaultValue
+* help
 
 ## usage example
 
@@ -37,10 +44,9 @@ var options = args.Options.parse([
 	}
 ]);
 
-options.getHelp();
+console.log(options.getHelp()); // shows help
 
-var parser = new args.Parser('node app.js --option 11'.split(' '), 2);
-parser.parse(options);
-var parsed = parser.prepareResult();
+var argv = 'node app.js --option 11'.split(' ');
+var parsed = args.parser(argv).parse(options);
 console.log(parsed); // {option: 11}
 ```
