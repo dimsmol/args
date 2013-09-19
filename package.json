@@ -10,6 +10,7 @@
 	"preferGlobal": false,
 	"private": false,
 	"dependencies": {
+		"marked_types": "~0.0.1",
 		"nerr": "~0.0.1"
 	},
 	"engines": {
