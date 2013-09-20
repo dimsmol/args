@@ -50,3 +50,7 @@ var argv = 'node app.js --option 11'.split(' ');
 var parsed = args.parser(argv).parse(options);
 console.log(parsed); // {option: 11}
 ```
+
+## License
+
+MIT
