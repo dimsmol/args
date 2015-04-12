@@ -13,6 +13,10 @@
 		"marked_types": "~0.0.1",
 		"nerr": "~0.1.0"
 	},
+  "devDependencies": {
+    "chai": "2.1.1",
+    "mocha": "2.1.0"
+  },
 	"engines": {
 		"node": ">=0.8.0"
 	},
@@ -23,5 +27,8 @@
 	"directories": {
 		"lib": "./lib"
 	},
-	"main": "./lib/index"
+	"main": "./lib/index",
+	"scripts": {
+		"test": "node ./test/run.js"
+	}
 }
