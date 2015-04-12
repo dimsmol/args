@@ -1,8 +1,8 @@
 "use strict";
-
 var args = require('../lib/');
 var chai = require("chai");
 var expect = chai.expect;
+
 
 describe("args test", function() {
 	it("args.parse", function() {
@@ -26,4 +26,3 @@ describe("args test", function() {
 		expect(ACTUAL).to.equal(EXPECTED);
 	});
 });
-

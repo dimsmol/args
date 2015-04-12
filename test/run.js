@@ -1,5 +1,6 @@
-
 var Mocha = require("mocha");
+
+
 var mocha = new Mocha({
 	ui: "bdd",
 	reporter: "spec",
@@ -11,4 +12,3 @@ mocha.addFile(require.resolve("./test"))
 mocha.run(function(err) {
 	process.exit(err)
 });
-
