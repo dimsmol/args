@@ -1,6 +1,6 @@
 **WARNING** Not actively supported! Please, consider switching to some other lib.
 
-**WARNING** npm package [args](https://www.npmjs.com/package/args) is not used for this project anymore. Ownership have been transferred to [leo](https://www.npmjs.com/~leo) to reuse `args` npm package name for other arguments parsing library. The latest version of the `args` npm package that is related to this project is `0.0.3`.
+**WARNING** npm package [args](https://www.npmjs.com/package/args) was used for this project only for versions <= `0.0.3`. Ownership then have been transferred to [leo](https://www.npmjs.com/~leo) to reuse `args` npm package name for other arguments parsing library.
 
 ## args
 
